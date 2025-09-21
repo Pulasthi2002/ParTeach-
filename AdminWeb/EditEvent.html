@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParTeach</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="EditEvent.css">
+    <script type="module" src="EditEvent.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a class="logo"><span>Par</span>Teach</a>
+            <ul class="nav-links">
+                <li><a href="AdminHome.html">Home</a></li>
+                <li><a href="ManageParent.html">Manage Parents</a></li>
+                <li><a href="ManageTeacher.html">Manage Teachers</a></li>
+                <li><a href="ManageEvent.html">Manage Events</a></li>
+                <li><a href="SupportTeacher.html">Teacher Support</a></li>
+                <li><a href="SupportParent.html">Parent Support</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <a href="ManageEvent.html" class="back-button">&lt; Back</a>
+        <h2>Edit Event</h2>
+        <form id="editEventForm">
+            <div class="inputBox">
+                <label for="eventName">Event Title:</label>
+                <input type="text" id="eventName" required>
+            </div>
+            <div class="inputBox">
+                <label for="eventMessage">Event Message:</label>
+                <textarea id="eventMessage" cols="30" rows="10" required></textarea>
+            </div>
+            <div class="inputBox">
+                <label for="eventImage">Event Image:</label>
+                <input type="file" id="eventImage">
+                <img id="previewImage" src="" alt="Image Preview" style="max-width: 100%; border-radius: 8px; margin-top: 10px;">
+            </div>
+            <button type="submit">Save Details</button>
+        </form>
+    </div>
+</body>
+</html>

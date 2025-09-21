@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo2_0"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo2_0"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PAR_TEACH"
+        tools:targetApi="31">
+        <activity
+            android:name=".teacher_home"
+            android:exported="false">
+        </activity>
+
+        <activity
+            android:name=".teacher_events"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".teacher_support"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".notifications"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".teacher_profile"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".teacher_feedback"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".DetailActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".chat_list"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".message"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".teacher_resources"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".about"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".teacher_settings"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".teacher_view_students"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".teacher_attendance"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".teacher_login"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".access_page"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

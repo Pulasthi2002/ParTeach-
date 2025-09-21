@@ -1,0 +1,141 @@
+
+body {
+    font-family: 'Rubik', sans-serif;
+    /*background-image: url(Images/Manage.jpg);*/
+    background-color: #22282f;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+}
+
+.navbar {
+    width: 100%;
+    background: #22282f;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #13bbff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all ease .3s;
+}
+
+.nav-links a:hover {
+    color: #13bbff;
+}
+
+.container {
+    background: transparent;
+    backdrop-filter: blur(50px);
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 600px;
+    height: 560px;
+    margin-top: 80px; 
+    border: 5px solid #13bbff;
+}
+
+.back-button {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    top: 10px;
+    left: 10px;
+    color: #13bbff;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #13bbff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputBox {
+    margin-bottom: 20px;
+    width: 100%; 
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    background-color: #22282f;
+    border: 1px solid #ccc;
+    color: #fff;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box; 
+}
+
+label {
+    color: #fff;
+}
+
+input::placeholder {
+    color: #fff;
+    font-size: 13px;
+}
+
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: 2px solid #13bbff;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 485px; 
+}
+
+button:hover {
+    background: transparent;
+    color: #13bbff;
+}
+
+

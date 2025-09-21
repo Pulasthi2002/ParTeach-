@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,200&display=swap');
+
+* {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    /*background: url('Images/admin.jpg') no-repeat center center fixed;*/
+    background-color: #22282f;
+    background-size: cover;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.navbar .logo span {
+    color: #13bbff;
+}
+
+.navbar .login-btn {
+    color: #fff;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+.navbar .login-btn:hover {
+    color: #13bbff;
+}
+
+#admin-section {
+    position: relative;
+    color: #ecf0f1;
+    padding: 30px 20px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.admin-welcome h2 {
+    margin-top: 2px;
+    font-size: 5rem;
+    text-shadow: 3px 3px rgb(0, 0, 0);
+    color: #ffffff;
+}
+
+.admin-welcome h2 span {
+    color: #13bbff;
+}
+
+.admin-photo {
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+    margin-top: 40px;
+}
+
+.admin-photo img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.admin-photo:hover img {
+    transform: scale(1.1); 
+}
+
+.admin-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.admin-tile {
+    background-color: #f0f0c9; 
+    color: #020a38; 
+    padding: 18px 30px;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: bold;
+    border: 5px solid #13bbff;
+    margin: 20px;
+    margin-top: 15px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.admin-tile:hover {
+    transform: translateY(-5px);
+    background: transparent;
+    color: #13bbff;
+}
+
+.admin-tile i {
+    font-size: 3rem;
+    margin-bottom: 10px; 
+}
+
+.admin-tile span {
+    display: block;
+}
+
+.footer {
+    /*background: rgba(0, 0, 0, 0.8);*/
+    background-color: #22282f;
+    color: #ffffff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer .footer-bottom {
+    font-size: 1.4rem;
+    color: #cccccc;
+}
+
+@media (max-width: 1200px) {
+    .navbar .container {
+        padding: 0 15px;
+    }
+
+    .admin-welcome h2 {
+        font-size: 4rem;
+    }
+
+    .admin-photo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .admin-tile {
+        flex: 1 1 calc(33.33% - 40px);
+    }
+}
+
+@media (max-width: 992px) {
+    .admin-tile {
+        flex: 1 1 calc(50% - 40px);
+    }
+
+    .admin-welcome h2 {
+        font-size: 3.5rem;
+    }
+
+    .navbar .logo {
+        font-size: 2rem;
+    }
+
+    .navbar .login-btn {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .admin-tile {
+        flex: 1 1 calc(100% - 40px);
+    }
+
+    .admin-welcome h2 {
+        font-size: 3rem;
+    }
+
+    .admin-photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .container{
+        margin-top: -20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar .login-btn {
+        font-size: 1.6rem;
+    }
+
+    .admin-welcome h2 {
+        font-size: 2.5rem;
+    }
+
+    .admin-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .admin-tile {
+        padding: 15px 20px;
+        font-size: 1.4rem;
+    }
+
+    .admin-tile i {
+        font-size: 2.5rem;
+    }
+}

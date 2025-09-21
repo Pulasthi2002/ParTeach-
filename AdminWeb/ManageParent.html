@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParTeach</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="ManageParent.css">
+    <script type="module" src="ManageParent.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a class="logo"><span>Par</span>Teach</a>
+            <div class="nav-toggle">
+                <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="AdminHome.html">Home</a></li>
+                <li><a href="ManageParent.html">Manage Parents</a></li>
+                <li><a href="ManageTeacher.html">Manage Teachers</a></li>
+                <li><a href="ManageEvent.html">Manage Events</a></li>
+                <li><a href="SupportTeacher.html">Teacher Support</a></li>
+                <li><a href="SupportParent.html">Parent Support</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <a href="AdminHome.html" class="back-button">&lt; Back</a>
+        <a href="AddParent.html" class="add-button"> Add Parent</a>
+        <div class="top-right-section">
+            <input type="text" id="searchBar" placeholder="Search By Email" class="search-bar">
+            <select id="classDropdown" class="class-dropdown">
+                <option value="" disabled selected>Select Class</option>
+                <option value="">All Classes</option>
+                <option value="1-A">1-A</option>
+                <option value="1-B">1-B</option>
+                <option value="1-C">1-C</option>
+            </select>
+        </div>
+        <h2>Registered Parents</h2>
+        <div id="userList" class="user-list"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    /*background-image: url(Images/Manage.jpg);*/
+    background-color: #22282f;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 100%;
+    background: #22282f;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    padding: 5px 0;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #13bbff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all ease 0.3s;
+}
+
+.nav-links a:hover {
+    color: #13bbff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 100px auto 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background: transparent;
+    backdrop-filter: blur(50px);
+    border: 5px solid #13bbff;
+}
+
+a.back-button {
+    display: inline-block;
+    text-decoration: none;
+    color: #13bbff;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #13bbff;
+    text-align: center;
+}
+
+.user {
+    position: relative;
+    border: 1px solid #ccc;
+    background-color:  #22282f;;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.user p {
+    margin: 0;
+}
+
+.user-list{
+    line-height: 35px;
+}
+
+.delete-btn {
+    background-color: #133eff;
+    color: #fff;
+    padding: 6px 10px;
+    border: 2px solid #13bbff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.delete-btn:hover {
+    background: transparent;
+    color: #13bbff;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .container {
+        margin-top: 60px; 
+    }
+}

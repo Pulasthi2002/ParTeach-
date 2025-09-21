@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParTeach</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="AddParent.css">
+    <script type="module" src="AddParent.js" defer></script>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a class="logo"><span>Par</span>Teach</a>
+            <ul class="nav-links">
+                <li><a href="AdminHome.html">Home</a></li>
+                <li><a href="ManageParent.html">Manage Parents</a></li>
+                <li><a href="ManageTeacher.html">Manage Teachers</a></li>
+                <li><a href="ManageEvent.html">Manage Events</a></li>
+                <li><a href="SupportTeacher.html">Teacher Support</a></li>
+                <li><a href="SupportParent.html">Parent Support</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <a href="ManageParent.html" class="back-button">&lt; Back</a>
+        <h2>Register Users</h2>
+        <form onsubmit="register(event)">
+            
+            <div class="inputBox">
+                <input type="text" id="name" placeholder="Full Name" required />
+            </div>
+
+            <div class="inputBox">
+                <input type="text" id="sname" placeholder="Student Name" required />
+            </div>
+            
+            <div class="inputBox">
+                <input type="email" id="email" placeholder="Email" required />
+            </div>
+
+            <div class="inputBox">
+                <input type="password" id="password" placeholder="Password" required />
+            </div>
+
+            
+            <div class="inputBox">
+                <select id="grade"required>
+                    <option value="#">Class</option>
+                    <option value="1-A">1 - A</option>
+                    <option value="1-B">1 - B</option>
+                    <option value="1-C">1 - C</option>
+                    
+                </select>
+            </div>
+            
+            <div class="inputBox">
+                <input type="text" id="address" placeholder="Address" required />
+            </div>
+            
+            <div class="inputBox">
+                <input type="tel" id="contact" placeholder="Contact Number" required />
+            </div>
+
+            <div class="inputBox">
+                <button id="signup" value="Sign up">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,149 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    /*background-image: url(Images/Manage.jpg);*/
+    background-color: #22282f;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 100%;
+    background: #22282f;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    padding: 5px 0;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #13bbff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all ease 0.3s;
+}
+
+.nav-links a:hover {
+    color: #13bbff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 120px auto 50px; 
+    background: transparent;
+    backdrop-filter: blur(50px);
+    border: 5px solid #13bbff;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    justify-content: center;
+}
+
+h2 {
+    color: #13bbff;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    text-decoration: none;
+    color: #13bbff;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.add-button {
+    position: absolute;
+    top: 10px;
+    left: 130px;
+    text-decoration: none;
+    color: #13bbff;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.event-list {
+    list-style: none;
+    padding: 0;
+    
+}
+
+li {
+    background-color:  #22282f;
+    color: #fff;
+    margin-bottom: 25px;
+    line-height: 30px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    list-style-type: none;
+    border: 1px solid #e2e8f0;
+    margin-left: -40px;
+}
+
+.edit-btn,
+.delete-btn {
+    background-color: #133eff;
+    color: #fff;
+    border: 2px solid #13bbff;
+    padding: 6px 20px;
+    margin-top: 15px;
+    margin-right: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background: transparent;
+    border: 2px solid #e62020;
+    padding: 6px 16px;
+}
+
+.edit-btn:hover {
+    background: transparent;
+    color: #13bbff;
+}
+.delete-btn:hover{
+    background-color: #f00d24;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .container {
+        margin-top: 60px; 
+    }
+}

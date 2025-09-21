@@ -1,0 +1,136 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    /*background-image: url(Images/Manage.jpg);*/
+    background-color: #22282f;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+}
+
+.navbar {
+    width: 100%;
+    background: #22282f;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #13bbff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all ease 0.3s;
+}
+
+.nav-links a:hover {
+    color: #13bbff;
+}
+
+.container {
+    max-width: 600px;
+    height: 580px;
+    margin: 90px auto 50px; 
+    background: transparent;
+    backdrop-filter: blur(50px);
+    border: 5px solid #13bbff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.back-button {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    top: 10px;
+    left: 10px;
+    color: #13bbff;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+    color: #13bbff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    background-color: #22282f;
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    width: 130px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid #13bbff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 468px;
+    margin-top: 5px;
+}
+
+button:hover {
+    background: transparent;
+    color: #13bbff;
+}
+
+.iemail {
+    background-color: #22282f;
+    color: #7a7672;
+}

@@ -1,0 +1,11 @@
+<!-- item_absent_date.xml -->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/textViewDate"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:textSize="18sp"
+    app:cardElevation="4dp"
+    android:textColor="@android:color/black"
+    android:gravity="center_vertical" />

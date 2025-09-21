@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="HeadingCol">#3F51B5</color>
+    <color name="btnCol">#2380FD</color>
+    <color name="sentMsg">#68A8FD</color>
+    <color name="receiveMsg">#636363</color>
+    <color name="colorPrimaryDark">#2e3d6d</color>
+    <color name="colorSecondary">#03DAC5</color>
+    <color name="colorBackground">#FFFFFF</color>
+</resources>

@@ -1,0 +1,133 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #22282f;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+}
+
+.navbar {
+    width: 100%;
+    background: #22282f;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #13bbff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all ease 0.3s;
+}
+
+.nav-links a:hover {
+    color: #13bbff;
+}
+
+.container {
+    max-width: 600px;
+    margin: 100px auto 50px;
+    background: transparent;
+    backdrop-filter: blur(50px);
+    padding: 20px;
+    padding-left: 50px;
+    border-radius: 8px;
+    position: relative;
+    border: 5px solid #13bbff;
+}
+
+h2 {
+    color: #13bbff;
+    text-align: center;
+}
+
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-decoration: none;
+    color: #13bbff;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.inputBox {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #22282f;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+input[type="file"] {
+    margin-top: 10px;
+    color: #fff;
+}
+
+button {
+    background-color: #007bff;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 460px;
+    border: 2px solid #13bbff;
+}
+
+button:hover {
+    background: transparent;
+    color: #13bbff;
+}
+
+#previewImage {
+    display: none;
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}

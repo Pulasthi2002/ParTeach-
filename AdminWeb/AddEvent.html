@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParTeach</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="AddEvent.css">
+    <script type="module" src="AddEvent.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a class="logo"><span>Par</span>Teach</a>
+            <ul class="nav-links">
+                <li><a href="AdminHome.html">Home</a></li>
+                <li><a href="ManageParent.html">Manage Parents</a></li>
+                <li><a href="ManageTeacher.html">Manage Teachers</a></li>
+                <li><a href="ManageEvent.html">Manage Events</a></li>
+                <li><a href="SupportTeacher.html">Teacher Support</a></li>
+                <li><a href="SupportParent.html">Parent Support</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <a href="ManageEvent.html" class="back-button">&lt; Back</a>
+        <h2>Add Events</h2>
+        <form onsubmit="register(event)">
+            <div class="inputBox">
+                <input type="text" id="name" placeholder="Event Title" required />
+            </div>
+
+            <div class="inputBox">
+                <textarea id="msgContent" cols="30" rows="10" placeholder="Message"></textarea>
+            </div>
+
+            <div class="inputBox">
+                <input type="file" id="image" accept="image/*" />
+            </div>
+
+            <div class="inputBox">
+                <button id="submit" value="Submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

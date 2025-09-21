@@ -1,0 +1,142 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #22282f;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+}
+
+.navbar {
+    width: 100%;
+    background: #22282f;
+    position: fixed;
+    top: 0;
+    height: 60px;
+    z-index: 1000;
+    padding: 5px 0;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #13bbff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all ease .50s;
+}
+
+.nav-links a:hover {
+    color: #13bbff;
+}
+
+.container {
+    background: transparent;
+    backdrop-filter: blur(50px);
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 90%; 
+    max-width: 600px;
+    height: 460px;
+    margin-top: 40px; 
+    border: 5px solid #13bbff;
+}
+
+.back-button {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    top: 10px;
+    left: 10px;
+    color: #13bbff;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #13bbff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputBox {
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #22282f;
+    border: 1px solid #ccc;
+    color: #fff;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+form input::placeholder {
+    color: #fff;
+    font-size: 13px;
+}
+
+textarea::placeholder {
+    color: #fff;
+    font-size: 14px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 2px solid #13bbff;
+    margin-left: 481px;
+}
+
+button:hover {
+    background: transparent;
+    color: #13bbff;
+}
